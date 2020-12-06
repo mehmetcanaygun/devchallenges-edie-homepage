@@ -132,6 +132,8 @@ ul {
 
 // SECTION - HOME
 .section-home {
+  margin-bottom: 100px;
+
   .box-1 {
     padding: 40px $px-lg;
 
@@ -209,6 +211,89 @@ ul {
           color: #fff;
           cursor: pointer;
         }
+      }
+    }
+  }
+}
+
+// SECTION - SERVICES
+.section-services {
+  margin-bottom: 100px;
+  padding: 40px 10%;
+
+  h1 {
+    width: 346px;
+    font-size: 36px;
+    color: $color-gray-1;
+    margin-bottom: 70px;
+  }
+
+  .card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      width: 341px;
+      height: 422px;
+      padding: 46px 34px;
+      border-radius: $radius-1;
+
+      .card-icon {
+        width: 67px;
+        height: 67px;
+        border-radius: $radius-2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 35px;
+
+        i {
+          color: #fff;
+        }
+      }
+
+      .card-icon.blue {
+        background-color: $color-blue;
+      }
+      .card-icon.green {
+        background-color: $color-green;
+      }
+      .card-icon.red {
+        background-color: $color-red;
+      }
+
+      h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: $color-gray-1;
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-weight: 400;
+        color: $color-gray-2;
+        margin-bottom: 30px;
+      }
+
+      button {
+        width: 116px;
+        height: 42px;
+        border: 0;
+        border-radius: $radius-3;
+        background-color: $color-gray-5;
+        color: $color-gray-3;
+        cursor: pointer;
+      }
+    }
+
+    .card:hover {
+      box-shadow: $box-shadow-hover;
+      transition: 0.3s;
+
+      button {
+        background-color: $color-blue;
+        color: #fff;
       }
     }
   }

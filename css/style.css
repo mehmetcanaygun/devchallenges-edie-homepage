@@ -118,6 +118,10 @@ ul {
           animation: hmbBottomRotate 0.4s ease-in-out 0.3s forwards;
 }
 
+.section-home {
+  margin-bottom: 100px;
+}
+
 .section-home .box-1 {
   padding: 40px 20%;
 }
@@ -201,6 +205,102 @@ ul {
   background-color: #2d9cdb;
   color: #fff;
   cursor: pointer;
+}
+
+.section-services {
+  margin-bottom: 100px;
+  padding: 40px 10%;
+}
+
+.section-services h1 {
+  width: 346px;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 70px;
+}
+
+.section-services .card-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-services .card-container .card {
+  width: 341px;
+  height: 422px;
+  padding: 46px 34px;
+  border-radius: 24px;
+}
+
+.section-services .card-container .card .card-icon {
+  width: 67px;
+  height: 67px;
+  border-radius: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
+.section-services .card-container .card .card-icon i {
+  color: #fff;
+}
+
+.section-services .card-container .card .card-icon.blue {
+  background-color: #2d9cdb;
+}
+
+.section-services .card-container .card .card-icon.green {
+  background-color: #27ae60;
+}
+
+.section-services .card-container .card .card-icon.red {
+  background-color: #eb5757;
+}
+
+.section-services .card-container .card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.section-services .card-container .card p {
+  font-weight: 400;
+  color: #4f4f4f;
+  margin-bottom: 30px;
+}
+
+.section-services .card-container .card button {
+  width: 116px;
+  height: 42px;
+  border: 0;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  color: #828282;
+  cursor: pointer;
+}
+
+.section-services .card-container .card:hover {
+  -webkit-box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+          box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section-services .card-container .card:hover button {
+  background-color: #2d9cdb;
+  color: #fff;
 }
 
 @-webkit-keyframes hmbTopRotate {
