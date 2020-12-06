@@ -299,6 +299,78 @@ ul {
   }
 }
 
+// SECTION - WORKS
+.section-works {
+  margin-bottom: 100px;
+  padding: 40px 10%;
+
+  h1 {
+    width: 448px;
+    font-size: 36px;
+    color: $color-gray-1;
+    margin-bottom: 70px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    .card {
+      width: 545px;
+
+      .img {
+        width: 100%;
+        height: 545px;
+        background-size: cover;
+        background-position: center;
+        border-radius: $radius-3;
+        margin-bottom: 20px;
+      }
+
+      &:nth-child(odd) {
+        margin-top: 160px;
+      }
+
+      &:nth-child(1) > .img {
+        background-image: url("../img/smarthome.jpg");
+      }
+      &:nth-child(2) > .img {
+        background-image: url("../img/onboard.png");
+      }
+      &:nth-child(3) > .img {
+        background-image: url("../img/booking.png");
+      }
+      &:nth-child(4) > .img {
+        background-image: url("../img/juice-product.png");
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        color: $color-gray-3;
+      }
+
+      h3 {
+        font-size: 24px;
+        color: $color-gray-1;
+      }
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    color: $color-blue;
+
+    i {
+      margin-left: 10px;
+    }
+  }
+}
+
 // Animations
 @keyframes hmbTopRotate {
   from {
