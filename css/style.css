@@ -118,6 +118,91 @@ ul {
           animation: hmbBottomRotate 0.4s ease-in-out 0.3s forwards;
 }
 
+.section-home .box-1 {
+  padding: 40px 20%;
+}
+
+.section-home .box-1 p {
+  font-size: 18px;
+  color: #2d9cdb;
+  margin-bottom: 20px;
+}
+
+.section-home .box-1 h1 {
+  width: 543px;
+  font-size: 48px;
+  color: #333;
+  font-weight: 500;
+}
+
+.section-home .box-2 {
+  height: 354px;
+  margin: 0 40px;
+  border-radius: 18px;
+  background-image: url("../img/heroImage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-home .box-3 {
+  padding: 40px 20%;
+}
+
+.section-home .box-3 h1 {
+  width: 366px;
+  font-size: 48px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.section-home .box-3 p {
+  width: 366px;
+  font-size: 18px;
+  color: #4f4f4f;
+  margin-bottom: 40px;
+}
+
+.section-home .box-3 .input-group label {
+  font-size: 14px;
+  color: #828282;
+  margin-bottom: 10px;
+}
+
+.section-home .box-3 .input-group div {
+  width: 350px;
+  height: 57px;
+  padding: 4px 4px 4px 20px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+}
+
+.section-home .box-3 .input-group div input {
+  border: 0;
+  background: none;
+  font-size: 18px;
+}
+
+.section-home .box-3 .input-group div button {
+  width: 94px;
+  height: 100%;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 0;
+  background-color: #2d9cdb;
+  color: #fff;
+  cursor: pointer;
+}
+
 @-webkit-keyframes hmbTopRotate {
   from {
     -webkit-transform: rotate(0deg);
