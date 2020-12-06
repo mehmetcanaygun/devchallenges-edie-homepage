@@ -46,6 +46,43 @@ ul {
   list-style-type: none;
 }
 
+// Components
+.input-group {
+  label {
+    font-size: 14px;
+    color: $color-gray-3;
+    margin-bottom: 10px;
+  }
+
+  div {
+    width: 350px;
+    height: 57px;
+    padding: 4px 4px 4px 20px;
+    border-radius: $radius-3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-gray-6;
+
+    input {
+      border: 0;
+      background: none;
+      font-size: 18px;
+    }
+
+    button {
+      width: 94px;
+      height: 100%;
+      font-size: 18px;
+      border-radius: $radius-3;
+      border: 0;
+      background-color: $color-blue;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
 // Navbar
 .navbar {
   height: 120px;
@@ -176,42 +213,6 @@ ul {
       font-size: 18px;
       color: $color-gray-2;
       margin-bottom: 40px;
-    }
-
-    .input-group {
-      label {
-        font-size: 14px;
-        color: $color-gray-3;
-        margin-bottom: 10px;
-      }
-
-      div {
-        width: 350px;
-        height: 57px;
-        padding: 4px 4px 4px 20px;
-        border-radius: $radius-3;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $color-gray-6;
-
-        input {
-          border: 0;
-          background: none;
-          font-size: 18px;
-        }
-
-        button {
-          width: 94px;
-          height: 100%;
-          font-size: 18px;
-          border-radius: $radius-3;
-          border: 0;
-          background-color: $color-blue;
-          color: #fff;
-          cursor: pointer;
-        }
-      }
     }
   }
 }
@@ -367,6 +368,172 @@ ul {
 
     i {
       margin-left: 10px;
+    }
+  }
+}
+
+// SECTION - CLIENTS
+.section-clients {
+  margin-bottom: 100px;
+  padding: 40px 10%;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 200px;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h3 {
+        font-size: 18px;
+        color: $color-red;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        width: 280px;
+        font-size: 36px;
+        color: $color-gray-1;
+        margin-bottom: 15px;
+      }
+
+      p {
+        width: 273px;
+        color: $color-gray-2;
+      }
+    }
+
+    .img {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .client-img {
+        background-size: cover;
+        background-position: center;
+        border-radius: $radius-2;
+
+        &:nth-child(1) {
+          width: 300px;
+          height: 300px;
+          background-image: url("../img/person3.png");
+          margin-top: 70px;
+        }
+        &:nth-child(2) {
+          width: 260px;
+          height: 260px;
+          background-image: url("../img/person1.png");
+        }
+        &:nth-child(3) {
+          width: 300px;
+          height: 300px;
+        }
+        &:nth-child(4) {
+          width: 290px;
+          height: 290px;
+          background-image: url("../img/person2.png");
+        }
+      }
+    }
+  }
+
+  .testimonial {
+    width: 937px;
+    font-size: 36px;
+    color: $color-gray-1;
+    margin-bottom: 36px;
+  }
+
+  .client-card {
+    display: flex;
+
+    .img {
+      width: 80px;
+      height: 80px;
+      border-radius: $radius-2;
+      background-image: url("../img/person4.png");
+      background-size: cover;
+      background-position: center;
+      margin-right: 30px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      h2 {
+        color: $color-gray-1;
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  background-color: $color-dark-blue;
+  padding: 0 10%;
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 60px;
+
+    .links {
+      li {
+        margin-bottom: 20px;
+
+        a {
+          color: $color-gray-6;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .sm {
+      h1 {
+        font-size: 36px;
+        color: $color-gray-6;
+        margin-bottom: 12px;
+      }
+
+      div {
+        display: flex;
+
+        a {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+        }
+
+        a:nth-child(1) {
+          background-image: url("../img/instagram.svg");
+        }
+        a:nth-child(2) {
+          background-image: url("../img/linkedin.svg");
+        }
+        a:nth-child(3) {
+          background-image: url("../img/twitter.svg");
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 20px 0;
+    color: $color-gray-4;
+    font-size: 14px;
+
+    a {
+      font-size: 14px;
+      text-decoration: none;
+      color: $color-gray-4;
     }
   }
 }
