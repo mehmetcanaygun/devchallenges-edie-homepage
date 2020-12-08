@@ -118,8 +118,8 @@ ul {
 
   .menu-btn {
     display: none;
-    width: 36px;
-    height: 25px;
+    width: 18px;
+    height: 12px;
     position: relative;
     border: 0;
     background: none;
@@ -129,8 +129,7 @@ ul {
     .middle,
     .bottom {
       width: 100%;
-      height: 3px;
-      border-radius: 4px;
+      height: 2px;
       background-color: #000;
       position: absolute;
       left: 0;
@@ -142,17 +141,17 @@ ul {
     }
 
     .middle {
-      top: 11px;
+      top: 5px;
     }
 
     .bottom {
-      top: 22px;
+      top: 10px;
     }
   }
 
   .menu-btn.toggled {
     .top {
-      top: 11px;
+      top: 5px;
       animation: hmbTopRotate 0.4s ease-in-out 0.3s forwards;
     }
 
@@ -161,7 +160,7 @@ ul {
     }
 
     .bottom {
-      top: 11px;
+      top: 5px;
       animation: hmbBottomRotate 0.4s ease-in-out 0.3s forwards;
     }
   }
@@ -559,15 +558,43 @@ footer {
 
 // Media Queries
 @media (max-width: 768px) {
+  // Components
+  .input-group {
+    label {
+      font-size: 10px;
+    }
+
+    div {
+      width: 100%;
+      height: 47px;
+
+      input {
+        font-size: 14px;
+      }
+
+      button {
+        width: 71px;
+        font-size: 14px;
+      }
+    }
+  }
+
   // Navbar
   .navbar {
+    height: 60px;
+    padding: 0 $px-sm-mb;
+
+    .site-title {
+      font-size: 24px;
+    }
+
     nav {
       display: block;
       position: absolute;
       top: -100vh;
       left: 0;
       width: 100%;
-      height: calc(100vh - 120px);
+      height: calc(100vh - 60px);
       transition: top 0.4s ease-in-out;
 
       ul {
@@ -582,8 +609,191 @@ footer {
       }
     }
 
+    nav.toggled {
+      top: 60px;
+    }
+
     .menu-btn {
       display: block;
+    }
+  }
+
+  // SECTION - HOME
+  .section-home {
+    margin-bottom: 60px;
+
+    .box-1 {
+      padding: 20px $px-lg-mb;
+
+      p {
+        font-size: 12px;
+        margin-bottom: 0;
+      }
+
+      h1 {
+        width: 272px;
+        font-size: 24px;
+      }
+    }
+
+    .box-2 {
+      height: 145px;
+      margin: 0 $px-sm-mb;
+    }
+
+    .box-3 {
+      padding: 20px $px-lg-mb;
+
+      h1 {
+        width: 227px;
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        width: 275px;
+        font-size: 12px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  // SECTION - SERVICES
+  .section-services {
+    margin-bottom: 0px;
+    padding: 20px 0;
+
+    h1 {
+      padding: 0 10%;
+      width: 100%;
+      font-size: 24px;
+      margin-bottom: 80px;
+    }
+
+    .card-container {
+      flex-direction: column;
+      padding: 0 5%;
+
+      .card {
+        width: 100%;
+        padding: 20px 5%;
+      }
+    }
+  }
+
+  // SECTION - WORKS
+  .section-works {
+    margin-bottom: 80px;
+    padding: 20px $px-sm-mb;
+
+    h1 {
+      width: 100%;
+      font-size: 24px;
+      margin-bottom: 48px;
+      padding: 0 calc(10% - 10px);
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+
+      .card {
+        width: 100%;
+        margin-bottom: 25px;
+
+        .img {
+          width: 100%;
+          height: 360px;
+          margin-bottom: 10px;
+        }
+
+        &:nth-child(odd) {
+          margin-top: 0px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    a {
+      justify-content: flex-start;
+      margin-left: 0px;
+    }
+  }
+
+  // SECTION - CLIENTS
+  .section-clients {
+    margin-bottom: 80px;
+    padding: 20px $px-sm-mb;
+
+    .grid {
+      grid-template-columns: 1fr;
+      margin-bottom: 100px;
+
+      .info {
+        margin-bottom: 20px;
+      }
+
+      .img {
+        .client-img {
+          &:nth-child(1) {
+            width: 150px;
+            height: 150px;
+          }
+          &:nth-child(2) {
+            width: 140px;
+            height: 140px;
+          }
+          &:nth-child(3) {
+            width: 150px;
+            height: 150px;
+          }
+          &:nth-child(4) {
+            width: 155px;
+            height: 155px;
+          }
+        }
+      }
+    }
+
+    .testimonial {
+      width: 100%;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+  }
+
+  // Footer
+  footer {
+    .footer-top {
+      grid-template-columns: 1fr;
+      padding-top: 36px;
+
+      .links,
+      .sm {
+        margin-bottom: 50px;
+      }
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 0 20px 0;
+      color: $color-gray-4;
+      font-size: 14px;
+
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: $color-gray-4;
+      }
     }
   }
 }
